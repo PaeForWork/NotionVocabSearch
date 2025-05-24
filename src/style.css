@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #f7f0e6;
+    width: 80vmin;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(38, 33, 61, 0.2);
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-box input {
+    padding: 10px;
+    flex: 1;
+    min-width: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #252525;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: #252525;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result h3 {
+    font-size: 20px;
+    color: #252525;
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.result button {
+    background-color: transparent;
+    color: #252525;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 10px 0;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.word-meaning {
+    color: #252525;
+}
+
+.word-example {
+    color: #252525;
+    font-style: italic;
+    border-left: 5px solid #252525;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.error {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+/* ✅ Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 95vw;
+        padding: 30px 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .search-box button {
+        padding: 10px;
+    }
+
+    .result h3 {
+        font-size: 18px;
+    }
+
+    .result .details {
+        font-size: 13px;
+    }
+}
